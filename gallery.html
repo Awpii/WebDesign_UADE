@@ -9,12 +9,12 @@
     <!-- Helper -->
     <header>
         <div class="container">
-            <h1>Foto-Grafia</h1>
-            <p class="tagline">Equipo Profesional y Servicios</p>
+            <h1>Foto-Grafia - Insumos Fotograficos</h1>
+            <p class="tagline">Equipo fotografico y servicios de mantenimiento</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="gallery.html" class="active">Tienda</a></li>
                     <li><a href="services.html">Servicios</a></li>
                     <li><a href="contacto.html">Contactanos</a></li>
                 </ul>
@@ -23,34 +23,103 @@
     </header>
     <!-- Gallery -->
     <section class="gallery">
-        <h2>Galería de oferta</h2>
-        <p>Explore nuestra selección de equipos en alquiler y venta.</p>
+        <h2>Galeria de Productos</h2>
+        <p>Hacé click en una categoría para ver los productos disponibles</p>
 
-        <div class="gallery-grid">
-            <div class="card">
-                <img src="images/camera-setup.jpg" alt="Camaras profesionales">
-                <h3>Camaras profesionales</h3>
-                <p>Camaras Reflex y Mirrorless de grado profesional.</p>
-            </div>
-        <div class="card">
-            <img src="images/premium-lens.jpg" alt="Lentes Premium">
-            <h3>Lentes premium</h3>
-            <p>Objetivos de grado profesional.</p>
-        </div>
-        <div class="card">
-            <img src="images/studio-light.jpg" alt="Iluminación de Estudio">
-            <h3>Iluminación de Estudio</h3>
-            <p>Equipo de iluminación profesional para estudios.</p>
-        </div>
-        <div class="card">
-            <img src="images/macro-lens.jpg" alt="Lentes Macro">
-            <h3>Lentes Macro</h3>
-            <p>Objetivos Macro especializados para fotografía macroscopica.</p>
-        </div>
-        <div class="card">
-            <img src="images/support.jpg" alt="Support Equipment">
-            <h3>Equipo de apoyo y estabilización</h3>
-            <p>Equipo de estabilización y apoyo para las fotos mas detalladas.</p>
+        <div class="category-list">
+            <details>
+                <summary>Camaras Profesionales</summary>
+                <ul class="product-gallery">
+                    <li>
+                        <img src="images/camera-setup.jpg" alt="Canon EOS R6 Mark II">
+                        <p><strong>Canon EOS R6 Mark II</strong><br> Cámara mirrorless profesional <span class="price">$2.100</span></p>
+                    </li>
+                    <li>
+                        <img src="images/camera-setup.jpg" alt="Nikon Z6 II">
+                        <p><strong>Nikon Z6 II</strong><br> Sensor full-frame, video 4K UHD <span class="price">$1900</span></p>
+                    </li>
+                    <li>
+                        <img src="images/camera-setup.jpg" alt="Sony A7 IV">
+                        <p><strong>Sony A7 IV</strong><br> Autofoco avanzado y rendimiento excepcional <span class="price">$2.300</span></p>
+                    </li>
+                    <li>
+                        <img src="images/camera-setup.jpg" alt="Fujifilm X-T5">
+                        <p><strong>Fujifilm X-T5</strong><br> Ligera y potente cámara APS-C <span class="price">$1.700</span></p>
+                    </li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Lentes Profesionales</summary>
+                <ul class="product-gallery">
+                    <li>
+                        <img src="images/premium-lens.jpg" alt="Canon RF 85mm f/1.2L">
+                        <p><strong>Canon RF 85mm f/1.2L</strong><br> Retratos con bokeh cremoso <span class="price">$2.000</span></p>
+                    </li>
+                    <li>
+                        <img src="images/premium-lens.jpg" alt="Sony 24–70mm GM II">
+                        <p><strong>Sony 24–70mm GM II</strong><br> Zoom versátil para fotografía profesional <span class="price">$1.800</span></p>
+                    </li>
+                    <li>
+                        <img src="images/premium-lens.jpg" alt="Nikon Z 70–200mm f/2.8">
+                        <p><strong>Nikon Z 70–200mm f/2.8</strong><br> Teleobjetivo rápido y preciso <span class="price">$1.950</span></p>
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Iluminación de Estudio</summary>
+                <ul class="product-gallery">
+                    <li>
+                        <img src="images/studio-light.jpg" alt="Godox AD200 Pro">
+                        <p><strong>Godox AD200 Pro</strong><br> Flash portátil de alta potencia <span class="price">$450</span></p>
+                    </li>
+                    <li>
+                        <img src="images/studio-light.jpg" alt="Neewer 660 LED Kit">
+                        <p><strong>Neewer 660 LED Kit</strong><br> Paneles LED bicolor con control remoto <span class="price">$320</span></p>
+                    </li>
+                    <li>
+                        <img src="images/studio-light.jpg" alt="Elinchrom ELC 500">
+                        <p><strong>Elinchrom ELC 500</strong><br> Luz de estudio profesional <span class="price">$600</span></p>
+                    </li>
+                </ul>
+            </details>
+            
+            <details>
+                <summary>Lentes Macro</summary>
+                <ul class="product-gallery">
+                    <li>
+                        <img src="images/macro-lens.jpg" alt="Canon EF 100mm f/2.8L Macro">
+                        <p><strong>Canon EF 100mm f/2.8L Macro</strong><br> Lente macro profesional <span class="price">$1.100</span></p>
+                    </li>
+                    <li>
+                        <img src="images/macro-lens.jpg" alt="Nikon Z MC 105mm f/2.8">
+                        <p><strong>Nikon Z MC 105mm f/2.8</strong><br> Alta resolución y precisión <span class="price">$1.050</span></p>
+                    </li>
+                    <li>
+                        <img src="images/macro-lens.jpg" alt="Sony FE 90mm f/2.8 Macro G OSS">
+                        <p><strong>Sony FE 90mm f/2.8 Macro G OSS</strong><br> Macro nítido y silencioso <span class="price">$1.200</span></p>
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Equipo de Apoyo y Estabilización</summary>
+                <ul class="product-gallery">
+                    <li>
+                        <img src="images/support.jpg" alt="Manfrotto 190X Tripod">
+                        <p><strong>Manfrotto 190X Tripod</strong><br> Trípode de aluminio profesional <span class="price">$250</span></p>
+                    </li>
+                    <li>
+                        <img src="images/support.jpg" alt="DJI Ronin SC2 Gimbal">
+                        <p><strong>DJI Ronin SC2 Gimbal</strong><br> Estabilizador electrónico compacto <span class="price">$400</span></p>
+                    </li>
+                    <li>
+                        <img src="images/support.jpg" alt="SmallRig Shoulder Rig">
+                        <p><strong>SmallRig Shoulder Rig</strong><br> Rig de hombro modular <span class="price">$280</span></p>
+                    </li>
+                </ul>
+            </details>
         </div>
     </section>
 
@@ -58,7 +127,7 @@
     <section class="cta">
         <h2>¿Buscás algo específico?</h2>
         <p>¿No encontrás ese producto que buscabas? ¡Contactanos!</p>
-        <a href="contact.html" class="btn">Envianos un mensaje</a>
+        <a href="contacto.html" class="btn">Envianos un mensaje</a>
     </section>
 
     <!-- Footer -->
@@ -67,15 +136,6 @@
             <div>
                 <h3>Foto-Grafia</h3>
                 <p>Tu socio de confianza para equipos, alquileres, limpieza y reparación</p>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li>Alquiler de Equipos</li>
-                    <li>Limpieza de Equipos</li>
-                    <li>Reparacion de Equipos</li>
-                    <li>Equipo Profesional</li>
-                </ul>
             </div>
             <div>
                 <h3>Informacion</h3>

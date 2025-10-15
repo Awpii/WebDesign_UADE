@@ -12,6 +12,21 @@ body {
     color: #333;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Asegura que el contenido principal crezca */
+main, section, .content, .gallery, .services, .contact {
+    flex: 1;
+}
+
 .container {
     max-width: 1100px;
     margin: auto;
@@ -103,7 +118,7 @@ header nav ul li a:hover {
     margin-top: 20px;
 }
 
-/* Galeria */
+/* Tienda */
 .gallery {
     text-align: center;
     padding: 40px 20px;
@@ -130,6 +145,129 @@ header nav ul li a:hover {
     object-fit: contain;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.category-list {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+details {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+summary {
+    padding: 15px;
+    background: #5469d4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    list-style: none;
+}
+
+details[open] summary {
+    background: #4354a1;
+}
+
+.product-gallery {
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    background: #f9f9f9;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.product-gallery li {
+    background: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.product-gallery li:hover {
+    border-color: #5469d4;
+    box-shadow: 0 0 10px rgba(84,105,212,0.3);
+    transform: translateY(-3px);
+}
+
+.product-gallery p strong + br + span,
+.product-gallery .price {
+    display: block;
+    color: #5469d4;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.product-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.product-gallery p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Lista de categorías con <details> */
+.category-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 0 20px;
+}
+
+details {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+summary {
+    padding: 15px 20px;
+    background: #5469d4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    list-style: none;
+    transition: background 0.2s;
+}
+
+details[open] summary {
+    background: #4354a1;
+}
+
+.category-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px 25px;
+    background: #f9f9f9;
+}
+
+.category-list ul li {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
 }
 
 /* Services */
