@@ -2,8 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto-Grafia - Insumos Fotograficos</title>
+    <title>Foto-Grafia - Insumos Fotográficos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,18 +18,23 @@
                     <li><a href="index.html" class="active">Inicio</a></li>
                     <li><a href="gallery.html">Tienda</a></li>
                     <li><a href="services.html">Servicios</a></li>
-                    <li><a href="contact.html">Contactanos</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!-- test -->
     <!-- Hero / Intro -->
     <section class="hero">
         <h2>Foto-Grafia - Mas de 20 años en el negocio</h2>
         <p>Nos especializamos en la venta y reparación de equipos fotograficos, con la mas altisima dedicacion</p>
+        <div class="hero-gallery">
+            <div class="img-wrap"><img src="images/wildlife_1.jpg" alt="Fotografo en llanura"></div>
+            <div class="img-wrap"><img src="images/wildlife_2.jpg" alt="Fotografo en montaña"></div>
+            <div class="img-wrap"><img src="images/wildlife_3.jpg" alt="Fotografo en templo"></div>
+            <div class="img-wrap"><img src="images/wildlife_4.jpg" alt="Fotografo en Ciudad"></div>
+            <div class="img-wrap"><img src="images/wildlife_5.jpg" alt="Fotografo en Tundra"></div>
+        </div>
     </section>
-
     <!-- Caracteristicas -->
     <section class="features">
         <div class="feature">
@@ -49,33 +57,34 @@
             <h3>Alquiler de Equipos</h3>
             <p>Alquiler de equipos fotograficos para proyectos a corto plazo, con opciones flexibles</p>
     </section>
-
     <!-- Por que elegirnos -->
     <section class="why">
-        <h2>Por que elegir Foto-Grafia?</h2>
+        <h2>¿Por qué elegir Foto-Grafia?</h2>
         <div class="why-grid">
-            <p>Tecnicos Certificados - Especialistas entrenados por los propios fabricantes</p>
-            <p>Devolucion Rapida - La *mayoria de los servicios completos en 24-48 horas</p>
-            <p>Precios Competitivos - Costos transparentes sin tarifas escondidas</p>
-            <p>Calidad Garantizada - Todos los servicios incluyen garantia por 30 dias</p>
+            <div class="razon-card">
+                <h3>Técnicos Certificados</h3>
+                <p>Especialistas entrenados por los propios fabricantes para garantizar la máxima calidad de servicio.</p>
+            </div>
+            <div class="razon-card">
+                <h3>Devolución Rápida</h3>
+                <p>Especialistas entrenados por los propios fabricantes para garantizar la máxima calidad de servicio.</p>
+            </div>
+            <div class="razon-card">
+                <h3>Precios Competitivos</h3>
+                <p>Costos transparentes sin tarifas escondidas ni sorpresas en la factura.</p>
+            </div>
+            <div class="razon-card">
+                <h3>Calidad Garantizada</h3>
+                <p>Todos los servicios incluyen garantia por 30 días y envíos sin costo.</p>
+            </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer">
             <div>
                 <h3>Foto-Grafia</h3>
                 <p>Tu socio de confianza para equipos, alquileres, limpieza y reparación</p>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li>Alquiler de Equipos</li>
-                    <li>Limpieza de Equipos</li>
-                    <li>Reparacion de Equipos</li>
-                    <li>Equipo Profesional</li>
-                </ul>
             </div>
             <div>
                 <h3>Informacion</h3>
@@ -87,6 +96,15 @@
             <p class="copyright">©2025 Foto-grafia. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script>
+        window.onload = function() {
+            const gallery = document.querySelector('.hero-gallery');
+            const images = gallery.querySelectorAll('.img-wrap');
+            images.forEach(function(item) {
+                const clone = item.cloneNode(true); // 'true' clona todos los elementos
+                gallery.appendChild(clone); //repite imagenes al final de la galeria
+            });
+        };
+    </script>
 </body>
-
 </html>
