@@ -25,14 +25,18 @@
     </header>
     <!-- Hero / Intro -->
     <section class="hero">
-        <h2>Foto-Grafia - Mas de 20 años en el negocio</h2>
-        <p>Nos especializamos en la venta y reparación de equipos fotograficos, con la mas altisima dedicacion</p>
-        <div class="hero-gallery">
-            <div class="img-wrap"><img src="images/wildlife_1.jpg" alt="Fotografo en llanura"></div>
-            <div class="img-wrap"><img src="images/wildlife_2.jpg" alt="Fotografo en montaña"></div>
-            <div class="img-wrap"><img src="images/wildlife_3.jpg" alt="Fotografo en templo"></div>
-            <div class="img-wrap"><img src="images/wildlife_4.jpg" alt="Fotografo en Ciudad"></div>
-            <div class="img-wrap"><img src="images/wildlife_5.jpg" alt="Fotografo en Tundra"></div>
+        <div class="container">
+            <h2>Foto-Grafia - Mas de 20 años en el negocio</h2>
+            <p>Nos especializamos en la venta y reparación de equipos fotograficos, con la mas altisima dedicacion</p>
+        </div>
+        <div class="hero-gallery-container">
+                <div class="hero-gallery">
+                <div class="img-wrap"><img src="images/wildlife_1.jpg" alt="Fotografo en llanura"></div>
+                <div class="img-wrap"><img src="images/wildlife_2.jpg" alt="Fotografo en montaña"></div>
+                <div class="img-wrap"><img src="images/wildlife_3.jpg" alt="Fotografo en templo"></div>
+                <div class="img-wrap"><img src="images/wildlife_4.jpg" alt="Fotografo en Ciudad"></div>
+                <div class="img-wrap"><img src="images/wildlife_5.jpg" alt="Fotografo en Tundra"></div>
+            </div>
         </div>
     </section>
     <!-- Caracteristicas -->
@@ -97,14 +101,28 @@
         </div>
     </footer>
     <script>
-        window.onload = function() {
-            const gallery = document.querySelector('.hero-gallery');
-            const images = gallery.querySelectorAll('.img-wrap');
-            images.forEach(function(item) {
-                const clone = item.cloneNode(true); // 'true' clona todos los elementos
-                gallery.appendChild(clone); //repite imagenes al final de la galeria
-            });
-        };
-    </script>
+    window.onload = function() {
+        const gallery = document.querySelector('.hero-gallery');
+        const images = Array.from(gallery.children);
+        const originalWidth = gallery.scrollWidth;
+        images.forEach(item => {
+            const clone = item.cloneNode(true);
+            gallery.appendChild(clone);
+        });
+        const style = document.createElement('style');
+        const keyframes = `
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-${originalWidth}px);
+                }
+            }
+        `;
+        style.innerHTML = keyframes;
+        document.head.appendChild(style);
+    };
+</script>
 </body>
 </html>
