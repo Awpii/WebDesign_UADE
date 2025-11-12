@@ -136,7 +136,7 @@ header nav ul li a:hover {
 /* Hero Banner */
 .hero {
     text-align: center;
-    padding: 60px 20px 20px;
+    padding: 60px 0 20px;
     background: white;
 }
 
@@ -146,11 +146,14 @@ header nav ul li a:hover {
     overflow: hidden;
     -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .hero-gallery {
+    width: max-content;
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 45s linear infinite;
+    padding-bottom: 5px;
 }
 
 .hero-gallery::-webkit-scrollbar {
@@ -236,7 +239,6 @@ header nav ul li a:hover {
 .why-grid .razon-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    /* Add a gradient border that matches your theme */
     border-image: linear-gradient(90deg, #5469d4, #8a54d4) 1;
 }
 
@@ -522,14 +524,5 @@ footer .copyright {
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
-    }
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
     }
 }
