@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto-Grafia | Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Foto-Grafia | Insumos Fotograficos</h1>
+            <p class="tagline">Equipo fotografico y servicios de mantenimiento</p>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="gallery.html">Tienda</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="carrito.html" class="carrito-button active-nav">Carrito (<span id="carrito-item-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Checkout / Carrito -->
+        <section class="gallery">
+            <h2>Tu carrito de compras</h2>
+            <div class="category-list">
+                <div class="carrito-detalles-wrapper">
+                    <div class="carrito-resumen">
+                        <span>Productos en tu carrito</span>
+                    </div>
+                    <div id="carrito-items-container">
+                    <!-- aca se insertan los items en el carrito por js-->
+                    </div>
+                    <div class="total-carrito">
+                        <h3>Total: $<span id="carrito-total-precio">0.00</span></h3>
+                        <button id="vaciar-carrito-button" class="btn">Vaciar Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>Foto-Grafia</h3>
+                <p>Tu socio de confianza para equipos, alquileres, limpieza y reparación</p>
+            </div>
+            <div>
+                <h3>Informacion</h3>
+                <p>Avenida Siempreviva 123<br>Galeria Pacifico</p>
+                <p>+54 9 11 1234-5687</p>
+                <p>informacion@foto-grafia.com.ar</p>
+                <p>Lun-Vie: 9:00 - 18:00, Sab: 9:00 - 14:00</p>
+            </div>
+            <p class="copyright">©2025 Foto-grafia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="carrito.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+        const carritoItemsContainer = document.getElementById('carrito-items-container');
+        const carritoPrecioTotalEl = document.getElementById('carrito-total-precio');
+        const vaciarCarritoButton = document.getElementById('vaciar-carrito-button');
+        const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+        if (carrito.length === 0) {
+            carritoItemsContainer.innerHTML = '<p class="empty-cart-message">Tu carrito está vacío.</p>';
+            return;
+        }
+
+        let totalPrice = 0;
+        carrito.forEach(item => {
+            const itemEl = document.createElement('div');
+            itemEl.className = 'carrito-item';
+            itemEl.innerHTML = `
+                <div class="img-card">
+                    <img src="${item.imageSrc}" alt="${item.name}">
+                </div>
+                <div class="carrito-item-info">
+                    <h4>${item.name}</h4>
+                </div>
+                <div class="carrito-price-box">
+                    <p>$${item.price.toFixed(2)}</p>
+                </div>
+            `;
+            carritoItemsContainer.appendChild(itemEl);
+            totalPrice += item.price;
+        });
+
+        carritoPrecioTotalEl.textContent = totalPrice.toFixed(2);
+        vaciarCarritoButton.addEventListener('click', () => {
+            localStorage.removeItem('carrito');
+            actualizarIconoCarrito();
+            location.reload();
+        });
+    });
+    </script>
+</body>
+</html>

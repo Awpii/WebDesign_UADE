@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto-Grafia - Insumos Fotográficos</title>
+    <title>Foto-Grafia | Insumos Fotográficos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,78 +11,85 @@
 <body>
     <header>
         <div class="container">
-            <h1>Foto-Grafia - Insumos Fotograficos</h1>
+            <h1>Foto-Grafia | Insumos Fotograficos</h1>
             <p class="tagline">Equipo fotografico y servicios de mantenimiento</p>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="index.html" class="active-nav">Inicio</a></li>
                     <li><a href="gallery.html">Tienda</a></li>
                     <li><a href="services.html">Servicios</a></li>
                     <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="carrito.html" class="carrito-button">Carrito (<span id="carrito-item-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!-- Hero / Intro -->
-    <section class="hero">
-        <div class="container">
-            <h2>Foto-Grafia - Mas de 20 años en el negocio</h2>
-            <p>Nos especializamos en la venta y reparación de equipos fotograficos, con la mas altisima dedicacion</p>
-        </div>
-        <div class="hero-gallery-container">
-                <div class="hero-gallery">
-                <div class="img-wrap"><img src="images/wildlife_1.jpg" alt="Fotografo en llanura"></div>
-                <div class="img-wrap"><img src="images/wildlife_2.jpg" alt="Fotografo en montaña"></div>
-                <div class="img-wrap"><img src="images/wildlife_3.jpg" alt="Fotografo en templo"></div>
-                <div class="img-wrap"><img src="images/wildlife_4.jpg" alt="Fotografo en Ciudad"></div>
-                <div class="img-wrap"><img src="images/wildlife_5.jpg" alt="Fotografo en Tundra"></div>
+
+    <main>
+
+        <!-- Hero / Intro -->
+        <section class="hero">
+            <div class="container">
+                <h2>Foto-Grafia - Mas de 20 años en el negocio</h2>
+                <p>Nos especializamos en la venta y reparación de equipos fotograficos, con la mas altisima dedicacion</p>
             </div>
-        </div>
-    </section>
-    <!-- Caracteristicas -->
-    <section class="features">
-        <div class="feature">
-            <div class="icon"icon">📷</div>
-            <h3>Equipos Fotograficos</h3>
-            <p>Cuerpos de Camara, Lentes y accesorios de altisima calidad, de marcas renombradas como Sony, Nikon y Canon</p>
-        </div>
-        <div class="feature">
-            <div class="icon">🛠️</div>
-            <h3>Reparacion Experta</h3>
-            <p>Servicio tecnico especializado en reparacion de equipos fotograficos, con garantia incluida</p>
-        </div>
-        <div class="feature">
-            <div class="icon">✨</div>
-            <h3>Limpieza</h3>
-            <p>Servicios de Limpieza para mantener tus equipos en su mejor capacidad</p>
-        </div>
-        <div class="feature">
-            <div class="icon">📅</div>
-            <h3>Alquiler de Equipos</h3>
-            <p>Alquiler de equipos fotograficos para proyectos a corto plazo, con opciones flexibles</p>
-    </section>
-    <!-- Por que elegirnos -->
-    <section class="why">
-        <h2>¿Por qué elegir Foto-Grafia?</h2>
-        <div class="why-grid">
-            <div class="razon-card">
-                <h3>Técnicos Certificados</h3>
-                <p>Especialistas entrenados por los propios fabricantes para garantizar la máxima calidad de servicio.</p>
+            <div class="hero-gallery-container">
+                    <div class="hero-gallery">
+                    <div class="img-wrap"><img src="images/wildlife_1.jpg" alt="Fotografo en llanura"></div>
+                    <div class="img-wrap"><img src="images/wildlife_2.jpg" alt="Fotografo en montaña"></div>
+                    <div class="img-wrap"><img src="images/wildlife_3.jpg" alt="Fotografo en templo"></div>
+                    <div class="img-wrap"><img src="images/wildlife_4.jpg" alt="Fotografo en Ciudad"></div>
+                    <div class="img-wrap"><img src="images/wildlife_5.jpg" alt="Fotografo en Tundra"></div>
+                </div>
             </div>
-            <div class="razon-card">
-                <h3>Devolución Rápida</h3>
-                <p>Especialistas entrenados por los propios fabricantes para garantizar la máxima calidad de servicio.</p>
+        </section>
+
+        <!-- Caracteristicas -->
+        <section class="features">
+            <div class="feature">
+                <div class="icon">📷</div>
+                <h3>Equipos Fotograficos</h3>
+                <p>Cuerpos de Camara, Lentes y accesorios de altisima calidad, de marcas renombradas como Sony, Nikon y Canon</p>
             </div>
-            <div class="razon-card">
-                <h3>Precios Competitivos</h3>
-                <p>Costos transparentes sin tarifas escondidas ni sorpresas en la factura.</p>
+            <div class="feature">
+                <div class="icon">🛠️</div>
+                <h3>Reparacion Experta</h3>
+                <p>Servicio tecnico especializado en reparacion de equipos fotograficos, con garantia incluida</p>
             </div>
-            <div class="razon-card">
-                <h3>Calidad Garantizada</h3>
-                <p>Todos los servicios incluyen garantia por 30 días y envíos sin costo.</p>
+            <div class="feature">
+                <div class="icon">✨</div>
+                <h3>Limpieza</h3>
+                <p>Servicios de Limpieza para mantener tus equipos en su mejor capacidad</p>
             </div>
-        </div>
-    </section>
+            <div class="feature">
+                <div class="icon">📅</div>
+                <h3>Alquiler de Equipos</h3>
+                <p>Alquiler de equipos fotograficos para proyectos a corto plazo, con opciones flexibles</p>
+        </section>
+        <!-- Por que elegirnos -->
+        <section class="why">
+            <h2>¿Por qué elegir Foto-Grafia?</h2>
+            <div class="why-grid">
+                <div class="razon-card">
+                    <h3>Técnicos Certificados</h3>
+                    <p>Especialistas entrenados por los propios fabricantes para garantizar la máxima calidad de servicio.</p>
+                </div>
+                <div class="razon-card">
+                    <h3>Devolución Rápida</h3>
+                    <p>Especialistas entrenados por los propios fabricantes para garantizar la máxima calidad de servicio.</p>
+                </div>
+                <div class="razon-card">
+                    <h3>Precios Competitivos</h3>
+                    <p>Costos transparentes sin tarifas escondidas ni sorpresas en la factura.</p>
+                </div>
+                <div class="razon-card">
+                    <h3>Calidad Garantizada</h3>
+                    <p>Todos los servicios incluyen garantia por 30 días y envíos sin costo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footer">
@@ -100,7 +107,10 @@
             <p class="copyright">©2025 Foto-grafia. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script>
+
+    <!-- Scripts -->
+    <script src="carrito.js"></script> <!-- Script del carrito -->
+    <script> //El carrusel de imagenes del indice.
     window.onload = function() {
         const gallery = document.querySelector('.hero-gallery');
         const images = Array.from(gallery.children);
@@ -122,7 +132,9 @@
         `;
         style.innerHTML = keyframes;
         document.head.appendChild(style);
+
+        actualizarIconoCarrito();
     };
-</script>
+    </script>
 </body>
 </html>

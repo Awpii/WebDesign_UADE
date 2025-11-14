@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto-Grafia - Servicios</title>
+    <title>Foto-Grafia | Servicios</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,64 +12,69 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Foto-Grafia - Insumos Fotograficos</h1>
+            <h1>Foto-Grafia | Insumos Fotograficos</h1>
             <p class="tagline">Equipo fotografico y servicios de mantenimiento</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="gallery.html">Tienda</a></li>
-                    <li><a href="services.html" class="active">Servicios</a></li>
+                    <li><a href="services.html" class="active-nav">Servicios</a></li>
                     <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="carrito.html" class="carrito-button">Carrito (<span id="carrito-item-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!-- Servicios -->
-    <section class="services">
-        <h2>Nuestros Servicios</h2>
-        <p>Ofrecemos una comprensiva lista de servicios para mantener su equipo</p>
-        <div class="services-grid">
-            <div class="card">
-                <h3>Alquiler de equipos</h3>
-                <p>Renta de equipamiento profesional por dia, semana o mes.</p>
-                <ul>
-                    <li>Camaras Reflex y Mirrorless</li>
-                    <li>Lentes Profesionales</li>
-                    <li>Iluminación de Estudio</li>
-                    <li>Tripodes y Estabilizadores</li>
-                    <li>Filtros y Otros Accesorios</li>
-                </ul>
-                <p class="price">Desde 25$/día</p>
+
+    <main>
+        <!-- Servicios -->
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <p>Ofrecemos una comprensiva lista de servicios para mantener su equipo</p>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Alquiler de equipos</h3>
+                    <p>Renta de equipamiento profesional por dia, semana o mes.</p>
+                    <ul>
+                        <li>Camaras Reflex y Mirrorless</li>
+                        <li>Lentes Profesionales</li>
+                        <li>Iluminación de Estudio</li>
+                        <li>Tripodes y Estabilizadores</li>
+                        <li>Filtros y Otros Accesorios</li>
+                    </ul>
+                    <p class="price">Desde 25$/día</p>
+                </div>
+                <div class="card">
+                    <h3>Reparación de Equipos</h3>
+                    <p>Reparaciónes de la mano de expertos certificados por los mismos fabricantes</p>
+                    <ul>
+                        <li>Reparación de cuerpos de Camara</li>
+                        <li>Calibración y reparación de Lentes</li>
+                        <li>Service de obturador mecanico</li>
+                        <li>Reparación de sistema de autoenfoque</li>
+                    </ul>
+                    <p class="price">Diagnostico sin cargo y mano de obra base de 50$</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Reparación de Equipos</h3>
-                <p>Reparaciónes de la mano de expertos certificados por los mismos fabricantes</p>
-                <ul>
-                    <li>Reparación de cuerpos de Camara</li>
-                    <li>Calibración y reparación de Lentes</li>
-                    <li>Service de obturador mecanico</li>
-                    <li>Reparación de sistema de autoenfoque</li>
-                </ul>
-                <p class="price">Diagnostico sin cargo y mano de obra base de 50$</p>
+        </section>
+        <!-- Proceso de Service -->
+        <section class="process">
+            <h2>Nuestro proceso de service</h2>
+            <div class="process-grid">
+                <div>1. Contactenos</div>
+                <div>2. Evaluación del caso</div>
+                <div>3. Reparación</div>
+                <div>4. Entrega</div>
             </div>
-        </div>
-    </section>
-    <!-- Proceso de Service -->
-    <section class="process">
-        <h2>Nuestro proceso de service</h2>
-        <div class="process-grid">
-            <div>1. Contactenos</div>
-            <div>2. Evaluación del caso</div>
-            <div>3. Reparación</div>
-            <div>4. Entrega</div>
-        </div>
-    </section>
-    <!-- Garantía -->
-    <section class="cta">
-        <h3>Garantía de Servicio</h3>
-        <p>Todas las reparaciónes y servicios de limpieza incluyen garantía de 90 días. Satisfacción Garantizada.</p>
-        <a href="contacto.html" class="btn">Agende una evaluación</a>
-    </section>
+        </section>
+        <!-- Garantía -->
+        <section class="cta">
+            <h3>Garantía de Servicio</h3>
+            <p>Todas las reparaciónes y servicios de limpieza incluyen garantía de 90 días. Satisfacción Garantizada.</p>
+            <a href="contacto.html" class="btn">Agende una evaluación</a>
+        </section>
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footer">
@@ -87,4 +92,5 @@
             <p class="copyright">©2025 Foto-grafia. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="carrito.js"></script>
 </body>

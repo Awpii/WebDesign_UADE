@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto-Grafia - Contactenos</title>
+    <title>Foto-Grafia | Contactenos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,70 +12,75 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <h1>Foto-Grafia - Insumos Fotograficos</h1>
+            <h1>Foto-Grafia | Insumos Fotograficos</h1>
             <p class="tagline">Equipo fotografico y servicios de mantenimiento</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="gallery.html">Tienda</a></li>
                     <li><a href="services.html">Servicios</a></li>
-                    <li><a href="contacto.html" class="active">Contactanos</a></li>
+                    <li><a href="contacto.html" class="active-nav">Contactanos</a></li>
+                    <li><a href="carrito.html" class="carrito-button">Carrito (<span id="carrito-item-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!-- Contacto -->
-    <section class="contact">
-        <h2>Contactenos</h2>
-        <p>Pongase en contacto con nuestro equipo para resolver cualquier consulta sobre nuestros servicios, alquileres o ventas.</p>
 
-        <div class="contact-grid">
-            <!-- Formulario -->
-            <form>
-                <label>Tipo de Consulta*</label>
-                <select required>
-                    <option>Consulta general</option>
-                    <option>Alquiler de Equipos</option>
-                    <option>Solicitud de Servicio</option>
-                    <option>Otros</option>
-                </select>
-                <label>Nombre Completo*</label>
-                <input type="text" required>
-                <label>Correo electrónico*</label>
-                <input type="email" required>
-                <label>Teléfono*</label>
-                <input type="tel" required>
-                <label>Sujeto*</label>
-                <input type="text" required>
-                <label>Mensaje*</label>
-                <textarea required></textarea>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
+    <main>
+        <!-- Contacto -->
+        <section class="contact">
+            <h2>Contactenos</h2>
+            <p>Pongase en contacto con nuestro equipo para resolver cualquier consulta sobre nuestros servicios, alquileres o ventas.</p>
 
-        <!-- Información -->
-        <div class="info">
-            <h3>Información de Contacto</h3>
-            <p>Estamos aquí para ayudarle con cualquier consulta o servicio que necesite.</p>
-            <ul>
-                <li class="contact-item">
-                    <span class="icon">📍</span>
-                    <span>Avenida Siempreviva 123<br>Galerias Pacifico</span>
-                </li>
-                <li class="contact-item">
-                    <span class="icon">📞</span>
-                    <span>+54 9 11 1234-5687</span>
-                </li>
-                <li class="contact-item">
-                    <span class="icon">✉️</span>
-                    <span>informacion@foto-grafia.com.ar</span>
-                </li>
-                <li class="contact-item">
-                    <span class="icon">⏰</span>
-                    <span>Lun-Vie: 9:00 - 18:00<br>Sab: 9:00 - 14:00</span>
-                </li>
-            </ul>
-        </div>
-    </section>
+            <div class="contact-grid">
+                <!-- Formulario -->
+                <form>
+                    <label>Tipo de Consulta*</label>
+                    <select required>
+                        <option>Consulta general</option>
+                        <option>Alquiler de Equipos</option>
+                        <option>Solicitud de Servicio</option>
+                        <option>Otros</option>
+                    </select>
+                    <label>Nombre Completo*</label>
+                    <input type="text" required>
+                    <label>Correo electrónico*</label>
+                    <input type="email" required>
+                    <label>Teléfono*</label>
+                    <input type="tel" required>
+                    <label>Sujeto*</label>
+                    <input type="text" required>
+                    <label>Mensaje*</label>
+                    <textarea required></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+
+            <!-- Información -->
+            <div class="info">
+                <h3>Información de Contacto</h3>
+                <p>Estamos aquí para ayudarle con cualquier consulta o servicio que necesite.</p>
+                <ul>
+                    <li class="contact-item">
+                        <span class="icon">📍</span>
+                        <span>Avenida Siempreviva 123<br>Galerias Pacifico</span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="icon">📞</span>
+                        <span>+54 9 11 1234-5687</span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="icon">✉️</span>
+                        <span>informacion@foto-grafia.com.ar</span>
+                    </li>
+                    <li class="contact-item">
+                        <span class="icon">⏰</span>
+                        <span>Lun-Vie: 9:00 - 18:00<br>Sab: 9:00 - 14:00</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footer">
@@ -93,4 +98,5 @@
             <p class="copyright">©2025 Foto-grafia. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <script src="carrito.js"></script>
 </body>

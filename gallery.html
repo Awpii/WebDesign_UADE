@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto-Grafia - Tienda</title>
+    <title>Foto-Grafia | Tienda</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,136 +12,142 @@
     <!-- Helper -->
     <header>
         <div class="container">
-            <h1>Foto-Grafia - Insumos Fotograficos</h1>
+            <h1>Foto-Grafia | Insumos Fotograficos</h1>
             <p class="tagline">Equipo fotografico y servicios de mantenimiento</p>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="gallery.html" class="active">Tienda</a></li>
+                    <li><a href="gallery.html" class="active-nav">Tienda</a></li>
                     <li><a href="services.html">Servicios</a></li>
                     <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="carrito.html" class="carrito-button">Carrito (<span id="carrito-item-count">0</span>)</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!-- Gallery -->
-    <section class="gallery">
-        <h2>Galeria de Productos</h2>
-        <p>Hacé click en una categoría para ver los productos disponibles</p>
-        <div class="category-list">
-            <details>
-                <summary>Camaras Profesionales</summary>
-                <ul class="product-gallery">
-                    <li>
-                        <img src="images/camera-setup.jpg" alt="Canon EOS R6 Mark II">
-                        <p><strong>Canon EOS R6 Mark II</strong><br> Cámara mirrorless profesional</p>
-                        <span class="price btn">$2.100</span>
-                    </li>
-                    <li>
-                        <img src="images/camera-setup.jpg" alt="Nikon Z6 II">
-                        <p><strong>Nikon Z6 II</strong><br> Sensor full-frame, video 4K UHD</p>
-                        <span class="price btn">$1900</span>
-                    </li>
-                    <li>
-                        <img src="images/camera-setup.jpg" alt="Sony A7 IV">
-                        <p><strong>Sony A7 IV</strong><br> Autofoco avanzado y rendimiento excepcional</p>
-                        <span class="price btn">$2.300</span>
-                    </li>
-                    <li>
-                        <img src="images/camera-setup.jpg" alt="Fujifilm X-T5">
-                        <p><strong>Fujifilm X-T5</strong><br> Ligera y potente cámara APS-C</p>
-                        <span class="price btn">$1.700</span>
-                    </li>
-                </ul>
-            </details>
-            <details>
-                <summary>Lentes Profesionales</summary>
-                <ul class="product-gallery">
-                    <li>
-                        <img src="images/premium-lens.jpg" alt="Canon RF 85mm f/1.2L">
-                        <p><strong>Canon RF 85mm f/1.2L</strong><br> Retratos con bokeh cremoso</p>
-                        <span class="price btn">$2.000</span>
-                    </li>
-                    <li>
-                        <img src="images/premium-lens.jpg" alt="Sony 24–70mm GM II">
-                        <p><strong>Sony 24–70mm GM II</strong><br> Zoom versátil para fotografía profesional</p>
-                        <span class="price btn">$1.800</span>
-                    </li>
-                    <li>
-                        <img src="images/premium-lens.jpg" alt="Nikon Z 70–200mm f/2.8">
-                        <p><strong>Nikon Z 70–200mm f/2.8</strong><br> Teleobjetivo rápido y preciso</p>
-                        <span class="price btn">$1.950</span>
-                    </li>
-                </ul>
-            </details>
-            <details>
-                <summary>Iluminación de Estudio</summary>
-                <ul class="product-gallery">
-                    <li>
-                        <img src="images/studio-light.jpg" alt="Godox AD200 Pro">
-                        <p><strong>Godox AD200 Pro</strong><br> Flash portátil de alta potencia</p>
-                        <span class="price btn">$450</span>
-                    </li>
-                    <li>
-                        <img src="images/studio-light.jpg" alt="Neewer 660 LED Kit">
-                        <p><strong>Neewer 660 LED Kit</strong><br> Paneles LED bicolor con control remoto</p>
-                        <span class="price btn">$320</span>
-                    </li>
-                    <li>
-                        <img src="images/studio-light.jpg" alt="Elinchrom ELC 500">
-                        <p><strong>Elinchrom ELC 500</strong><br> Luz de estudio profesional</p>
-                        <span class="price btn">$600</span>
-                    </li>
-                </ul>
-            </details>
-            <details>
-                <summary>Lentes Macro</summary>
-                <ul class="product-gallery">
-                    <li>
-                        <img src="images/macro-lens.jpg" alt="Canon EF 100mm f/2.8L Macro">
-                        <p><strong>Canon EF 100mm f/2.8L Macro</strong><br> Lente macro profesional</p>
-                        <span class="price btn">$1.100</span>
-                    </li>
-                    <li>
-                        <img src="images/macro-lens.jpg" alt="Nikon Z MC 105mm f/2.8">
-                        <p><strong>Nikon Z MC 105mm f/2.8</strong><br> Alta resolución y precisión</p>
-                        <span class="price btn">$1.050</span>
-                    </li>
-                    <li>
-                        <img src="images/macro-lens.jpg" alt="Sony FE 90mm f/2.8 Macro G OSS">
-                        <p><strong>Sony FE 90mm f/2.8 Macro G OSS</strong><br> Macro nítido y silencioso</p>
-                        <span class="price btn">$1.200</span>
-                    </li>
-                </ul>
-            </details>
-            <details>
-                <summary>Equipo de Apoyo y Estabilización</summary>
-                <ul class="product-gallery">
-                    <li>
-                        <img src="images/support.jpg" alt="Manfrotto 190X Tripod">
-                        <p><strong>Manfrotto 190X Tripod</strong><br> Trípode de aluminio profesional</p>
-                        <span class="price btn">$250</span>
-                    </li>
-                    <li>
-                        <img src="images/support.jpg" alt="DJI Ronin SC2 Gimbal">
-                        <p><strong>DJI Ronin SC2 Gimbal</strong><br> Estabilizador electrónico compacto</p>
-                        <span class="price btn">$400</span>
-                    </li>
-                    <li>
-                        <img src="images/support.jpg" alt="SmallRig Shoulder Rig">
-                        <p><strong>SmallRig Shoulder Rig</strong><br> Rig de hombro modular</p>
-                        <span class="price btn">$280</span>
-                    </li>
-                </ul>
-            </details>
-        </div>
-    </section>
-    <!-- CTA -->
-    <section class="cta">
-        <h2>¿Buscás algo específico?</h2>
-        <p>¿No encontrás ese producto que buscabas? ¡Contactanos!</p>
-        <a href="contacto.html" class="btn">Envianos un mensaje</a>
-    </section>
+
+    <main>
+        <!-- Gallery -->
+        <section class="gallery">
+            <h2>Galeria de Productos</h2>
+            <p>Esperamos que encuentre lo que busca</p>
+            <div class="category-list">
+                <details open>
+                    <summary>Camaras Profesionales</summary>
+                    <ul class="product-gallery">
+                        <li>
+                            <img src="images/camera-setup.jpg" alt="Canon EOS R6 Mark II">
+                            <p><strong>Canon EOS R6 Mark II</strong><br> Cámara mirrorless profesional</p>
+                            <span class="price btn">$2.100</span>
+                        </li>
+                        <li>
+                            <img src="images/camera-setup.jpg" alt="Nikon Z6 II">
+                            <p><strong>Nikon Z6 II</strong><br> Sensor full-frame, video 4K UHD</p>
+                            <span class="price btn">$1900</span>
+                        </li>
+                        <li>
+                            <img src="images/camera-setup.jpg" alt="Sony A7 IV">
+                            <p><strong>Sony A7 IV</strong><br> Autofoco avanzado y rendimiento excepcional</p>
+                            <span class="price btn">$2.300</span>
+                        </li>
+                        <li>
+                            <img src="images/camera-setup.jpg" alt="Fujifilm X-T5">
+                            <p><strong>Fujifilm X-T5</strong><br> Ligera y potente cámara APS-C</p>
+                            <span class="price btn">$1.700</span>
+                        </li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Lentes Profesionales</summary>
+                    <ul class="product-gallery">
+                        <li>
+                            <img src="images/premium-lens.jpg" alt="Canon RF 85mm f/1.2L">
+                            <p><strong>Canon RF 85mm f/1.2L</strong><br> Retratos con bokeh cremoso</p>
+                            <span class="price btn">$2.000</span>
+                        </li>
+                        <li>
+                            <img src="images/premium-lens.jpg" alt="Sony 24–70mm GM II">
+                            <p><strong>Sony 24–70mm GM II</strong><br> Zoom versátil para fotografía profesional</p>
+                            <span class="price btn">$1.800</span>
+                        </li>
+                        <li>
+                            <img src="images/premium-lens.jpg" alt="Nikon Z 70–200mm f/2.8">
+                            <p><strong>Nikon Z 70–200mm f/2.8</strong><br> Teleobjetivo rápido y preciso</p>
+                            <span class="price btn">$1.950</span>
+                        </li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Iluminación de Estudio</summary>
+                    <ul class="product-gallery">
+                        <li>
+                            <img src="images/studio-light.jpg" alt="Godox AD200 Pro">
+                            <p><strong>Godox AD200 Pro</strong><br> Flash portátil de alta potencia</p>
+                            <span class="price btn">$450</span>
+                        </li>
+                        <li>
+                            <img src="images/studio-light.jpg" alt="Neewer 660 LED Kit">
+                            <p><strong>Neewer 660 LED Kit</strong><br> Paneles LED bicolor con control remoto</p>
+                            <span class="price btn">$320</span>
+                        </li>
+                        <li>
+                            <img src="images/studio-light.jpg" alt="Elinchrom ELC 500">
+                            <p><strong>Elinchrom ELC 500</strong><br> Luz de estudio profesional</p>
+                            <span class="price btn">$600</span>
+                        </li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Lentes Macro</summary>
+                    <ul class="product-gallery">
+                        <li>
+                            <img src="images/macro-lens.jpg" alt="Canon EF 100mm f/2.8L Macro">
+                            <p><strong>Canon EF 100mm f/2.8L Macro</strong><br> Lente macro profesional</p>
+                            <span class="price btn">$1.100</span>
+                        </li>
+                        <li>
+                            <img src="images/macro-lens.jpg" alt="Nikon Z MC 105mm f/2.8">
+                            <p><strong>Nikon Z MC 105mm f/2.8</strong><br> Alta resolución y precisión</p>
+                            <span class="price btn">$1.050</span>
+                        </li>
+                        <li>
+                            <img src="images/macro-lens.jpg" alt="Sony FE 90mm f/2.8 Macro G OSS">
+                            <p><strong>Sony FE 90mm f/2.8 Macro G OSS</strong><br> Macro nítido y silencioso</p>
+                            <span class="price btn">$1.200</span>
+                        </li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary>Equipo de Apoyo y Estabilización</summary>
+                    <ul class="product-gallery">
+                        <li>
+                            <img src="images/support.jpg" alt="Manfrotto 190X Tripod">
+                            <p><strong>Manfrotto 190X Tripod</strong><br> Trípode de aluminio profesional</p>
+                            <span class="price btn">$250</span>
+                        </li>
+                        <li>
+                            <img src="images/support.jpg" alt="DJI Ronin SC2 Gimbal">
+                            <p><strong>DJI Ronin SC2 Gimbal</strong><br> Estabilizador electrónico compacto</p>
+                            <span class="price btn">$400</span>
+                        </li>
+                        <li>
+                            <img src="images/support.jpg" alt="SmallRig Shoulder Rig">
+                            <p><strong>SmallRig Shoulder Rig</strong><br> Rig de hombro modular</p>
+                            <span class="price btn">$280</span>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <h2>¿Buscás algo específico?</h2>
+            <p>¿No encontrás ese producto que buscabas? ¡Contactanos!</p>
+            <a href="contacto.html" class="btn">Envianos un mensaje</a>
+        </section>
+    </main>
+
     <!-- Footer -->
     <footer>
         <div class="footer">
@@ -160,15 +166,34 @@
         </div>
     </footer>
     <!-- Script-->
+    <script src="carrito.js"></script>
     <script>
-    window.onload = function() {
-        const priceElements = document.querySelectorAll('.price');
-        priceElements.forEach(function(element) {
-            element.className += ' boton-precio';
-            element.addEventListener('click', function() {
-                alert('Agregado al carrito!');
+    document.addEventListener('DOMContentLoaded', function() {
+        const precioElementos = document.querySelectorAll('.price.btn');
+        precioElementos.forEach(function(element) {
+            element.classList.add('boton-precio');
+            
+            element.addEventListener('click', function(event) {
+                const productoLi = event.target.closest('li');
+                
+                // lee la info del producto y la extrae
+                const name = productoLi.querySelector('strong').textContent;
+                const imageSrc = productoLi.querySelector('img').src;
+                const precioTexto = event.target.textContent;
+                const priceString = precioTexto.replace('$', '').replace('.', '');
+                const price = parseFloat(priceString);
+                const product = { name, imageSrc, price };
+
+                // agrega al localstorage
+                const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push(product);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+
+                // actualiza el carrito
+                actualizarIconoCarrito();
+                alert(`'${name}' ha sido agregado al carrito!`);
             });
         });
-    }
+    });
     </script>
 </body>
